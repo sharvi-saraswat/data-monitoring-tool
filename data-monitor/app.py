@@ -25,7 +25,7 @@ elif src.startswith("Sample"):
     except FileNotFoundError:
         st.sidebar.error("Run: python generate_sample_data.py")
 else:
-    p = st.sidebar.text_input("File path", "data/sample_dirty.csv")
+    p = st.sidebar.text_input("File path", str(BASE / "data" / "sample_dirty.csv"))
     try:
         df, name = ingest.load_file(p, p), p
     except Exception as e:
