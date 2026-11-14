@@ -1,5 +1,8 @@
 # Data Monitoring Tool
 
+🔗 **Live Demo:** https://data-monitoring-tool.streamlit.app/
+
+
 Monitors datasets (CSV / Excel / JSON) for quality problems, schema changes and
 distribution drift, stores every run in SQLite, raises alerts, and shows everything
 in a Streamlit dashboard.
