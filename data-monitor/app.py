@@ -1,6 +1,8 @@
 """MEMBER 3 - Streamlit dashboard."""
 import time
 import pandas as pd
+from pathlib import Path
+BASE = Path(__file__).resolve().parent
 import streamlit as st
 from monitor import checks, storage, alerts, ingest
 
