@@ -19,7 +19,7 @@ if src == "Upload file":
     if up:
         df, name = ingest.load_file(up, up.name), up.name
 elif src.startswith("Sample"):
-        f = str(BASE / "data" / ("sample_clean.csv" if "clean" in src else "sample_dirty.csv"))
+    f = str(BASE / "data" / ("sample_clean.csv" if "clean" in src else "sample_dirty.csv"))
     try:
         df, name = pd.read_csv(f), f
     except FileNotFoundError:
